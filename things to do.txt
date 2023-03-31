@@ -1,0 +1,13 @@
+make it so files can be uploaded to website in a section, and then stored there
+code for this:
+
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+give each section a different theme? mathsy stuff for maths section for example

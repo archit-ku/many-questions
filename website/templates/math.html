@@ -1,0 +1,58 @@
+{% extends "base.html" %} {% block title %}Math{% endblock %} {% block content
+%}
+
+<div class="container" style="justify-content: center; padding-top: 10%">
+  <div class="accordion" id="mathSelection">
+    <div class="card">
+      <div class="card-header" id="further">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-toggle="collapse"
+            data-target="#furtherContent"
+            aria-expanded="true"
+            aria-controls="furtherContent"
+          >
+            further math
+          </button>
+        </h5>
+      </div>
+
+      <div
+        id="furtherContent"
+        class="collapse show"
+        aria-labelledby="further"
+        data-parent="#mathSelection"
+      >
+        <div class="card-body">Here is further math stuff</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="single">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#singleContent"
+            aria-expanded="false"
+            aria-controls="singleContent"
+          >
+            single math
+          </button>
+        </h5>
+      </div>
+      <div
+        id="singleContent"
+        class="collapse"
+        aria-labelledby="single"
+        data-parent="#mathSelection"
+      >
+        <div class="card-body">single math stuff</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
