@@ -5,7 +5,7 @@ views = Blueprint("views", __name__)
 
 @views.route("/", methods=["GET","POST"])
 def home():
-    return render_template("home.html", mathURL=url_for("views.math"), physicsURL=url_for("views.physics"), compsciURL=url_for("views.compsci"))
+    return render_template("home.html")
 
 @views.route("/math", methods=["GET","POST"])
 def math():
