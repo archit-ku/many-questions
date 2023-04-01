@@ -1,7 +1,112 @@
 {% extends "base.html" %} {% block title %}Physics{% endblock %} {% block
 content %}
-<h1>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo
-  laboriosam dolores ad deserunt ut officia quisquam commodi quas veniam?
-</h1>
+<div class="container" style="justify-content: center; padding-top: 10%">
+  <div class="accordion" id="physicsSelection">
+    <div class="card">
+      <div class="card-header" id="paper1">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-toggle="collapse"
+            data-target="#paper1Content"
+            aria-expanded="true"
+            aria-controls="paper1Content"
+          >
+            paper 1
+          </button>
+        </h5>
+      </div>
+
+      <div
+        id="paper1Content"
+        class="collapse show"
+        aria-labelledby="paper1"
+        data-parent="#physicsSelection"
+      >
+        <div class="card-body">
+          <a href="paper1_measurementsAndTheirErrors"
+            >measurements and their errors</a
+          >
+          <br />
+          <a href="paper1_particlesAndRadiation">particles and radiation</a>
+          <br />
+          <a href="paper1_waves">waves</a>
+          <br />
+          <a href="paper1_mechAndMaterials">mech and materials</a>
+          <br />
+          <a href="paper1_electricity">electricity</a>
+          <br />
+          <a href="paper1_shuffle">shuffle</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="paper2">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#paper2Content"
+            aria-expanded="false"
+            aria-controls="paper2Content"
+          >
+            paper 2
+          </button>
+        </h5>
+      </div>
+      <div
+        id="paper2Content"
+        class="collapse"
+        aria-labelledby="paper2"
+        data-parent="#physicsSelection"
+      >
+        <div class="card-body">
+          <a href="paper2_thermal">thermal</a>
+          <br />
+          <a href="paper2_fields">fields</a>
+          <br />
+          <a href="paper2_nuclear">nuclear</a>
+          <br />
+          <a href="paper2_shuffle">shuffle</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" id="paper3">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link"
+            type="button"
+            data-toggle="collapse"
+            data-target="#paper3Content"
+            aria-expanded="true"
+            aria-controls="paper3Content"
+          >
+            paper 3
+          </button>
+        </h5>
+      </div>
+      <div
+        id="paper3Content"
+        class="collapse show"
+        aria-labelledby="paper3"
+        data-parent="#physicsSelection"
+      >
+        <div class="card-body">
+          <a href="paper3_practicalSkills">practical skills</a>
+          <br />
+          <a href="paper3_turningPoints">turning points</a>
+          <br />
+          <a href="paper3_shuffle">shuffle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <a href="shuffle">shuffle all physics</a>
+</div>
 {% endblock %}

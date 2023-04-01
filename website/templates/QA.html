@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Math{% endblock %} {% block content
+%}
+
+<div class="container" style="justify-content: center; padding-top: 10%">
+  <div
+    id="QAFlashCard"
+    class="carousel slide"
+    data-ride="carousel"
+    data-interval="false"
+  >
+    <ol class="carousel-indicators">
+      <li data-target="#QAFlashCard" data-slide-to="0" class="active"></li>
+      <li data-target="#QAFlashCard" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/{{question}}" />
+      </div>
+      <div class="carousel-item">
+        <img src="/{{answer}}" />
+      </div>
+    </div>
+    <a
+      href="#QAFlashCard"
+      role="button"
+      data-slide="next"
+      style="color: #1a355b"
+    >
+      <span class="fa-solid fa-angles-right" aria-hidden="true"></span>
+    </a>
+  </div>
+  <br />
+  <br />
+  <a href="" style="color: #1a355b">another question</a>
+</div>
+{% endblock %}
